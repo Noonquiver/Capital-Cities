@@ -13,6 +13,7 @@
 		D7DE35372883AB4800535C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DE35352883AB4800535C80 /* Main.storyboard */; };
 		D7DE35392883AB4A00535C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DE35382883AB4A00535C80 /* Assets.xcassets */; };
 		D7DE353C2883AB4A00535C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DE353A2883AB4A00535C80 /* LaunchScreen.storyboard */; };
+		D7DE35462883B01500535C80 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE35452883B01500535C80 /* Capital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D7DE35382883AB4A00535C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7DE353B2883AB4A00535C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7DE353D2883AB4A00535C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DE35452883B01500535C80 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				D7DE35312883AB4800535C80 /* SceneDelegate.swift */,
 				D7DE35332883AB4800535C80 /* ViewController.swift */,
 				D7DE35352883AB4800535C80 /* Main.storyboard */,
+				D7DE35452883B01500535C80 /* Capital.swift */,
 				D7DE35382883AB4A00535C80 /* Assets.xcassets */,
 				D7DE353A2883AB4A00535C80 /* LaunchScreen.storyboard */,
 				D7DE353D2883AB4A00535C80 /* Info.plist */,
@@ -141,6 +144,7 @@
 				D7DE35342883AB4800535C80 /* ViewController.swift in Sources */,
 				D7DE35302883AB4800535C80 /* AppDelegate.swift in Sources */,
 				D7DE35322883AB4800535C80 /* SceneDelegate.swift in Sources */,
+				D7DE35462883B01500535C80 /* Capital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
