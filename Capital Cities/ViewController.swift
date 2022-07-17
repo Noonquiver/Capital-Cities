@@ -64,14 +64,26 @@ class ViewController: UIViewController, MKMapViewDelegate {
             annotationView?.markerTintColor = .purple
             annotationView?.tintColor = .purple
             
-            let btn = UIButton(type: .detailDisclosure)
+            let btn = UIButton(type: .detailDisclosure, primaryAction: UIAction(handler: {
+                [weak self] _ in
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    if let webViewController = self?.storyboard?.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController {
+                        guard let country = annotation.title else { return }
+                        webViewController.selectedCountry = country
+                        self?.navigationController?.pushViewController(webViewController, animated: true)
+                    }
+                }
+            }))
+            
             annotationView?.rightCalloutAccessoryView = btn
+            
         } else {
             annotationView?.annotation = annotation
         }
 
         return annotationView
     }
+    
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let capital = view.annotation as? Capital else { return }
